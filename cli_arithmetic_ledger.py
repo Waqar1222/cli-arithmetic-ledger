@@ -1,6 +1,6 @@
 
 with open("cli_arithmetic_ledger.txt", "a") as f:
-        f.write("Calculator History\n")
+        f.write("CLI Arithmetic Ledger History\n")
 while True: 
     try:
         a = int(input("Enter a number: "))
@@ -34,15 +34,15 @@ while True:
             f.write(f"{a} + {b} = {add(a, b)}\n")
         print(f"{a} + {b} = {add(a, b)}")
     elif choice == '2':
-        with open("calc_history.txt", "a") as f:
+        with open("cli_arithmetic_ledger.txt", "a") as f:
             f.write(f"{a} - {b} = {subtract(a, b)}\n")
         print(f"{a} - {b} = {subtract(a, b)}")
     elif choice == '3':
-        with open("calc_history.txt", "a") as f:
+        with open("cli_arithmetic_ledger.txt", "a") as f:
             f.write(f"{a} * {b} = {multiply(a, b)}\n")
         print(f"{a} * {b} = {multiply(a, b)}")
     elif choice == '4':
-        with open("calc_history.txt", "a") as f:
+        with open("cli_arithmetic_ledger.txt", "a") as f:
             f.write(f"{a} / {b} = {divide(a, b)}\n")
         print(f"{a} / {b} = {divide(a, b)}")
     else:
