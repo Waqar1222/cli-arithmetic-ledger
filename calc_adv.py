@@ -1,5 +1,5 @@
 
-with open("calc_history.txt", "a") as f:
+with open("cli_arithmetic_ledger.txt", "a") as f:
         f.write("Calculator History\n")
 while True: 
     try:
@@ -30,7 +30,7 @@ while True:
     choice = input("Enter choice (1/2/3/4): ")
 
     if choice == '1':
-        with open("calc_history.txt", "a") as f:
+        with open("cli_arithmetic_ledger.txt", "a") as f:
             f.write(f"{a} + {b} = {add(a, b)}\n")
         print(f"{a} + {b} = {add(a, b)}")
     elif choice == '2':
